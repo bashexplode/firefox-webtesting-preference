@@ -17,6 +17,11 @@ The mozilla.cfg file should then be placed in the follow directory:
 | Windows          | C:\Program Files (x86)\Mozilla Firefox         |
 | macOS            | /Applications/Firefox.app/Contents/Resources   |
 
+
+Remove annoying "Update available" pop up box via Windows Registry:  
+`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox` -> Add new DWORD (32-bit) Value of `DisableAppUpdate` -> Set value data to `1`  
+
+
 ---
 
 ### References:
